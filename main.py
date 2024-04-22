@@ -1,37 +1,70 @@
-import pygame
-pygame.init()
+'''pygame_get.pressed    ?'''
+'''
+list1 = [1, 4, 19 33,90]
+i=1
+while i < 11:
+    i+=1
+    print(i)
+    '''
+'''
+list1 = [1, 4, 19 33,90]
+list_chet = []
+for i in list1:
+    if i%2==0:
+        list_chet.append(i)
 
-screen = pygame.display.set_mode((500, 400))
-pygame.display.set_caption("First Programm")
-
-WHITE = (255, 255, 255)
-RED = (255,0,0)
-BLUE = (0, 0, 255)
-GREEN = (0, 255, 0)
-
-while True:
-#while flRun:
-
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-           # pygame.quit()
-
-        #elif event.type == pygame.QUIT:
-            exit()
-
-    pygame.draw.rect(screen, BLUE, (10, 10, 50, 30), 5) #5 - тощина линии
-    pygame.draw.line(screen, RED, (10, 50), (60, 50), 5)
-    pygame.draw.aaline(screen, GREEN, (50, 90), (100, 90), 5)
-
-    pygame.draw.polygon(screen, WHITE, [[100, 100], [170, 130], [190, 95]], 4)
-    pygame.draw.circle(screen, BLUE, (300, 250), 50)
-    pygame.draw.ellipse(screen, BLUE, (240, 70, 150, 70), 5) #5 - тощина линии
-
-    pygame.display.update()
+print(list_chet)
+'''
 
 
 
+'''
+list1 = [1, 4, 19 33,90]
+summa = 0
+for i in range(1, 10):
+    ssumma=summa+i
+print(summa)'''
+
+
+'''
+list1 = [1, "tu", 1792, "uiqs"]
+
+list1.append("world")
+list1.insert(1, -85.5)
+list1.pop(0) #номер, если не задан,то последний эл
+list1.remove("tu") #конкретный
+sort()
+min() #числа только
+max()
+sum()
+
+for i in range(1, 10):
+    print(i)
+    
+for i in range(1, 10):
+    
+print(list1)
+'''
 
 
 
 
+
+
+
+
+
+"""a = int(input("Введи:"))
+
+if a>0:
+    print("+")
+elif a==0:
+    print("zero")
+else:
+    print("-")
+"""
+
+'''name = ("L")
+print("hi", name)
+print(f'hi {name}')
+print("hi"+ name)'''
