@@ -1,0 +1,51 @@
+import pygame
+pygame.init()
+
+W = 600
+H = 400
+screen = pygame.display.set_mode((W,H))
+pygame.display.set_caption('First Programm')
+
+ccllock = pygame.time.Clock()
+FPS = 60
+
+x = W//2
+y = H//2
+
+while True:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            exit()
+
+    keys = pygame.key.get_pressed()
+    if keys[pygame.K_LEFT]:
+        x=x-5
+    elif keys[pygame.K_RIGHT]:
+        x=x+5
+
+    screen.fill((255,255,255))
+    pygame.draw.rect(screen, (0,0,255), (x,y,50,20))
+
+    pygame.display.update()
+    ccllock.tick(FPS)
+
+
+
+
+'''
+        elif event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_RIGHT:
+                flRight=True
+            elif event.key == pygame.K_LEFT:
+                flLeft=True
+
+        elif event.type == pygame.KEYUP:
+            if event.key in [pygame.K_RIGHT, pygame.K_LEFT]:
+                flRight = flLeft = False
+
+    if flRight:
+        x=x+5
+    elif flLeft:
+        x=x-5
+'''
+
